@@ -1,3 +1,7 @@
+import emailIcon from "../assets/contact/emailIcon.png";
+import githubIcon from "../assets/contact/githubIcon.png";
+import linkedinIcon from "../assets/contact/linkedinIcon.png";
+
 const Footer = () => {
   return (
     <footer
@@ -12,7 +16,7 @@ const Footer = () => {
         <div className="mail flex justify-center items-center gap-2">
           <figure className="h-[40px] w-[40px] max-[800px]:h-[30px] max-[800px]:w-[30px] max-[650px]:h-[20px] max-[650px]:w-[20px]">
             <img
-              src="/src/assets/contact/emailIcon.png"
+              src={emailIcon}
               alt="email"
             />
           </figure>
@@ -23,7 +27,7 @@ const Footer = () => {
         <div className="linkedin flex justify-center items-center gap-2">
           <figure className="h-[40px] w-[40px] max-[800px]:h-[30px] max-[800px]:w-[30px] max-[650px]:h-[20px]  max-[650px]:w-[20px]">
             <img
-              src="/src/assets/contact/linkedinIcon.png"
+              src={linkedinIcon}
               alt="linkedin"
             />
           </figure>
@@ -34,7 +38,7 @@ const Footer = () => {
         <div className="github flex justify-center items-center gap-2">
           <figure className="h-[40px] w-[40px] max-[800px]:h-[30px] max-[800px]:w-[30px] max-[650px]:h-[20px]  max-[650px]:w-[20px]">
             <img
-              src="/src/assets/contact/githubIcon.png"
+              src={githubIcon}
               alt="github"
             />
           </figure>

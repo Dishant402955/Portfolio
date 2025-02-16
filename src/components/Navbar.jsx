@@ -1,15 +1,14 @@
 import { useState } from "react";
-import path from "path";
 
 const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
-  const [icon, setIcon] = useState("/src/assets/nav/menuIcon.png");
+  const [icon, setIcon] = useState("../src/assets/nav/menuIcon.png");
 
   const handleClick = () => {
     setIcon((prev) =>
       isActive
-        ? "/src/assets/nav/menuIcon.png"
-        : "/src/assets/nav/closeIcon.png"
+        ? "../src/assets/nav/menuIcon.png"
+        : "../src/assets/nav/closeIcon.png"
     );
     setIsActive((prev) => !prev);
     document.getElementById("nav").classList.toggle("max-[1400px]:hidden");

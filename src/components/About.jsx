@@ -1,13 +1,18 @@
+import cursorIcon from "../assets/about/cursorIcon.png";
+import serverIcon from "../assets/about/serverIcon.png";
+import dataIcon from "../assets/about/uiIcon.png";
+import aboutIcon from "../assets/about/aboutIcon.png";
+
 const About = () => {
   return (
     <section
       className="about flex justify-center items-center mb-28 pt-20 "
       id="about"
     >
-      <div className="flex justify-around items-center max-[1300px]:flex-col bg-zinc-900 max-w-[1000px] rounded-4xl   max-[1000px]:w-[80%]">
+      <div className="flex justify-around items-center max-[1300px]:flex-col bg-zinc-900 max-w-[1000px] rounded-4xl   max-[1000px]:w-[80%] py-10">
         <figure className="w-[500px] h-[500px] max-[1300px]:h-[60%] max-[1300px]:w-[60%]">
           <img
-            src="/src/assets/about/aboutIcon.png"
+            src={aboutIcon}
             alt="about me"
             className="rounded-[50%]"
           />
@@ -16,7 +21,7 @@ const About = () => {
           <div className="card one flex mx-5 bg-linear-to-r from-zinc-700 to-zinc-950 p-2 rounded-2xl">
             <figure>
               <img
-                src="/src/assets/about/cursorIcon.png"
+                src={cursorIcon}
                 width={100}
                 height={100}
                 alt="curson icon"
@@ -35,7 +40,7 @@ const About = () => {
           <div className="card two flex mx-5 bg-linear-to-r from-zinc-700 to-zinc-950 p-2 rounded-2xl">
             <figure>
               <img
-                src="/src/assets/about/serverIcon.png"
+                src={serverIcon}
                 width={100}
                 height={100}
                 alt="server icon"
@@ -54,7 +59,7 @@ const About = () => {
           <div className="card three flex mx-5 bg-linear-to-r from-zinc-700 to-zinc-950 p-2 rounded-2xl">
             <figure>
               <img
-                src="/src/assets/about/uiIcon.png"
+                src={dataIcon}
                 width={100}
                 height={100}
                 alt="ui icon"

@@ -1,3 +1,11 @@
+import htmlIcon from "../assets/skills/html.png";
+import cssIcon from "../assets/skills/css.png";
+import nodeIcon from "../assets/skills/node.png";
+import graphqlIcon from "../assets/skills/graphql.png";
+import mongodbIcon from "../assets/skills/mongodb.png";
+import reactIcon from "../assets/skills/react.png";
+import figmaIcon from "../assets/skills/figma.png";
+
 const Experience = () => {
   return (
     <div
@@ -11,7 +19,7 @@ const Experience = () => {
         <div className="tool one flex flex-col justify-center items-center">
           <figure className="bg-zinc-900 p-4 rounded-[50%] flex justify-center items-center h-[120px] w-[120px] max-[1000px]:h-[100px] max-[1000px]:w-[100px] max-[400px]:h-[75px] max-[400px]:w-[75px]">
             <img
-              src="/src/assets/skills/html.png"
+              src={htmlIcon}
               alt="html"
               className=""
             />
@@ -23,7 +31,7 @@ const Experience = () => {
         <div className="tool two flex flex-col justify-center items-center">
           <figure className="bg-zinc-900 p-4 rounded-[50%] flex justify-center items-center h-[120px] w-[120px] max-[1000px]:h-[100px] max-[1000px]:w-[100px] max-[400px]:h-[75px] max-[400px]:w-[75px] ">
             <img
-              src="/src/assets/skills/css.png"
+              src={cssIcon}
               alt="css"
             />
           </figure>
@@ -34,7 +42,7 @@ const Experience = () => {
         <div className="tool three flex flex-col justify-center items-center">
           <figure className="bg-zinc-900 p-4 rounded-[50%] flex justify-center items-center h-[120px] w-[120px] max-[1000px]:h-[100px] max-[1000px]:w-[100px] max-[400px]:h-[75px] max-[400px]:w-[75px]">
             <img
-              src="/src/assets/skills/react.png"
+              src={reactIcon}
               alt="react"
             />
           </figure>
@@ -45,7 +53,7 @@ const Experience = () => {
         <div className="tool four flex flex-col justify-center items-center">
           <figure className="bg-zinc-900 p-4 rounded-[50%] flex justify-center items-center h-[120px] w-[120px] max-[1000px]:h-[100px] max-[1000px]:w-[100px] max-[400px]:h-[75px] max-[400px]:w-[75px]">
             <img
-              src="/src/assets/skills/node.png"
+              src={nodeIcon}
               alt="node"
             />
           </figure>
@@ -56,7 +64,7 @@ const Experience = () => {
         <div className="tool five flex flex-col justify-center items-center">
           <figure className="bg-zinc-900 p-4 rounded-[50%] flex justify-center items-center h-[120px] w-[120px] max-[1000px]:h-[100px] max-[1000px]:w-[100px] max-[400px]:h-[75px] max-[400px]:w-[75px]">
             <img
-              src="/src/assets/skills/graphql.png"
+              src={graphqlIcon}
               alt="graphql"
             />
           </figure>
@@ -67,7 +75,7 @@ const Experience = () => {
         <div className="tool six flex flex-col justify-center items-center">
           <figure className="bg-zinc-900 p-4 rounded-[50%] flex justify-center items-center h-[120px] w-[120px] max-[1000px]:h-[100px] max-[1000px]:w-[100px] max-[400px]:h-[75px] max-[400px]:w-[75px]">
             <img
-              src="/src/assets/skills/mongodb.png"
+              src={mongodbIcon}
               alt="mongodb"
             />
           </figure>
@@ -79,7 +87,7 @@ const Experience = () => {
         <div className="tool seven flex flex-col justify-center items-center">
           <figure className="bg-zinc-900 p-4 rounded-[50%] flex justify-center items-center h-[120px] w-[120px] max-[1000px]:h-[100px] max-[1000px]:w-[100px] max-[400px]:h-[75px] max-[400px]:w-[75px]">
             <img
-              src="/src/assets/skills/figma.png"
+              src={figmaIcon}
               alt="figma"
             />
           </figure>

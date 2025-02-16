@@ -1,3 +1,5 @@
+import heroIcon from "../assets/hero/me.jpg";
+
 const Hero = () => {
   return (
     <div
@@ -19,7 +21,7 @@ const Hero = () => {
       </div>
       <figure className="max-[1080px]:my-10 w-[393px] h-[401px] max-[550px]:h-[60%] max-[550px]:w-[60%]">
         <img
-          src="/src/assets/hero/me.jpg"
+          src={heroIcon}
           alt="hero img"
           className="rounded-[50%]  "
         />

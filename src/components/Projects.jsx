@@ -1,3 +1,5 @@
+import projectIcon from "../assets/projects/project.png";
+
 const Projects = () => {
   return (
     <div
@@ -9,7 +11,7 @@ const Projects = () => {
         <div className="project-card flex flex-col justify-center items-center max-w-[350px] px-2 py-6 bg-zinc-900 rounded-2xl max-[1000px]:max-w-[250px] max-[1000px]:text-sm max-[1000px]:py-4">
           <figure>
             <img
-              src="/src/assets/projects/project.png"
+              src={projectIcon}
               alt="project"
               width={298}
               height={200}
@@ -42,7 +44,7 @@ const Projects = () => {
         <div className="project-card flex flex-col justify-center items-center max-w-[350px] px-2 py-6 bg-zinc-900 rounded-2xl max-[1000px]:max-w-[250px] max-[1000px]:text-sm max-[1000px]:py-4">
           <figure>
             <img
-              src="/src/assets/projects/project.png"
+              src={projectIcon}
               alt="project"
               width={298}
               height={200}
@@ -76,7 +78,7 @@ const Projects = () => {
         <div className="project-card flex flex-col justify-center items-center max-w-[350px] px-2 py-6 bg-zinc-900 rounded-2xl max-[1000px]:max-w-[250px] max-[1000px]:text-sm max-[1000px]:py-4">
           <figure>
             <img
-              src="/src/assets/projects/project.png"
+              src={projectIcon}
               alt="project"
               width={298}
               height={200}
