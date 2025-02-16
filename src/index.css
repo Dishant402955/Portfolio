@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@tailwindcss base;
+@tailwindcss components;
+@tailwindcss utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    ::-webkit-scrollbar {
+      background: #333333;
+      width: 0.6rem;
+      padding: 5px;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #888888;
+      border-radius: 100px;
+      height: 25vh;
+    }
+  }
+  body {
+    @apply bg-zinc-800 text-white;
+  }
+}
+
+@layer components {
+  .active {
+    @apply border-y-2 text-zinc-500;
+  }
+}
+
+@layer utilities {
+  .font-hero {
+    font-family: "Liberation Mono", Consolas, Monaco, "Courier New";
+  }
+}
