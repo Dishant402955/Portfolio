@@ -32,7 +32,7 @@ const Footer = () => {
             />
           </figure>
           <p className="address max-[800px]:text-sm max-[650px]:text-xs">
-            linkedin.com/dishant-radadiya
+            linkedin.com/in/dishant-radadiya
           </p>
         </div>
         <div className="github flex justify-center items-center gap-2">
