@@ -1,37 +1,24 @@
 @import "tailwindcss";
 
-@tailwindcss base;
-@tailwindcss components;
-@tailwindcss utilities;
+@tailwind utilities;
 
-@layer base {
-  html {
-    scroll-behavior: smooth;
-    ::-webkit-scrollbar {
-      background: #333333;
-      width: 0.6rem;
-      padding: 5px;
-    }
-
-    ::-webkit-scrollbar-thumb {
-      background: #888888;
-      border-radius: 100px;
-      height: 25vh;
-    }
+html {
+  scroll-behavior: smooth;
+  ::-webkit-scrollbar {
+    background: #333333;
+    width: 0.6rem;
+    padding: 5px;
   }
-  body {
-    @apply bg-zinc-800 text-white;
+
+  ::-webkit-scrollbar-thumb {
+    background: #888888;
+    border-radius: 50px;
   }
 }
 
-@layer components {
-  .active {
-    @apply border-y-2 text-zinc-500;
-  }
+body {
+  @apply bg-zinc-900 text-zinc-50;
 }
-
-@layer utilities {
-  .font-hero {
-    font-family: "Liberation Mono", Consolas, Monaco, "Courier New";
-  }
+.nav-item {
+  @apply rounded-xl text-white/70 px-5 py-1.5 font-semibold hover:bg-zinc-500/20 hover:text-white transition duration-300 max-[450px]:px-3 max-[450px]:py-1 max-[450px]:text-xs max-[600px]:px-3;
 }

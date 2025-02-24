@@ -1,53 +1,31 @@
-import emailIcon from "../assets/contact/emailIcon.png";
-import githubIcon from "../assets/contact/githubIcon.png";
-import linkedinIcon from "../assets/contact/linkedinIcon.png";
+import Arrow from "../assets/icons/arrow-up-right.svg";
 
 const Footer = () => {
   return (
-    <footer
-      className="bg-zinc-950 flex justify-evenly items-center py-20 max-[750px]:flex-col max-[750px]:gap-y-16"
-      id="footer"
-    >
-      <div className="headings flex flex-col justify-center gap-2">
-        <h1 className="text-4xl max-[650px]:text-3xl">Contact</h1>
-        <p className="text-xl max-[650px]:text-lg">Feel free to reach out!</p>
-      </div>
-      <div className="contacts flex flex-col justify-center items-start gap-y-3">
-        <div className="mail flex justify-center items-center gap-2">
-          <figure className="h-[40px] w-[40px] max-[800px]:h-[30px] max-[800px]:w-[30px] max-[650px]:h-[20px] max-[650px]:w-[20px]">
-            <img
-              src={emailIcon}
-              alt="email"
-            />
-          </figure>
-          <p className="address max-[800px]:text-sm max-[650px]:text-xs">
-            dishantradadiya3036@gmail.com
-          </p>
+    <div id="footer" className="py-10 flex justify-center items-center w-full">
+      <div className="container bg-zinc-800 py-5 w-[60%] rounded-[80px] flex justify-around items-center max-[900px]:flex-col max-[600px]:w-[300px]">
+        <div className="mt-14 mb-10 max-[900px]:mb-2 max-[600px]:mt-8 max-[600px]:mb-1">
+          <h2 className="text-2xl mb-2  max-[600px]:text-lg">Contact Me</h2>
+          <div id="email">
+            <p className="text-lg text-zinc-500 mb-2  max-[600px]:text-sm">dishantradadiya3036@gmail.com</p>
+          </div>
         </div>
-        <div className="linkedin flex justify-center items-center gap-2">
-          <figure className="h-[40px] w-[40px] max-[800px]:h-[30px] max-[800px]:w-[30px] max-[650px]:h-[20px]  max-[650px]:w-[20px]">
-            <img
-              src={linkedinIcon}
-              alt="linkedin"
-            />
-          </figure>
-          <p className="address max-[800px]:text-sm max-[650px]:text-xs">
-            linkedin.com/in/dishant-radadiya
-          </p>
-        </div>
-        <div className="github flex justify-center items-center gap-2">
-          <figure className="h-[40px] w-[40px] max-[800px]:h-[30px] max-[800px]:w-[30px] max-[650px]:h-[20px]  max-[650px]:w-[20px]">
-            <img
-              src={githubIcon}
-              alt="github"
-            />
-          </figure>
-          <p className="address max-[800px]:text-sm max-[650px]:text-xs">
-            github.com/Dishant402955
-          </p>
+        <div id="links" className="mt-14 mb-10 max-[900px]:mt-2  max-[600px]:text-sm  max-[600px]:mb-5 max-[600px]:mt-2">
+          <div id="linkedin">
+            <a href="https://linkedin.com/in/dishant-radadiya" className="flex items-center gap-3 my-2" target="_blank">
+              <span>Linkedin</span>
+              <img src={Arrow} alt="arrow" width={18} className="bg-amber-50/40 rounded-full mr-2" />
+            </a>
+          </div>
+          <div id="github">
+            <a href="https://github.com/Dishant402955" className="flex items-center gap-3 my-2" target="_blank">
+              <span>GitHub</span>
+              <img src={Arrow} alt="arrow" width={18} className="bg-amber-50/40 rounded-full mr-2" />
+            </a>
+          </div>
         </div>
       </div>
-    </footer>
+    </div>
   );
 };
 

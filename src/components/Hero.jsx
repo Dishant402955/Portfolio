@@ -1,33 +1,41 @@
-import heroIcon from "../assets/hero/me.jpg";
+import memojiImage from "../assets/images/memoji-computer.png";
+import ArrowDown from "../assets/icons/arrow-down.svg";
 
-const Hero = () => {
+const HeroSection = () => {
   return (
-    <div
-      className="flex justify-center items-center w-full my-36 text-white font-hero gap-x-28 max-[1080px]:flex-col max-[650px]:my-20 max-[550px]:w-full max-[650px]:gap-0 "
-      id="hero"
-    >
-      <div className="details max-w-[450px] max-[650px]:max-w-max ">
-        <h1 className="text-3xl font-bold my-2 max-[650px]:text-2xl max-[430px]:text-xl">
-          Hi, I'm Dishant
+    <div className="py-24 md:py-36 lg:py-48 flex justify-center items-center" id="hero">
+      <div className="container flex flex-col justify-center items-center">
+        <div className="flex flex-col justify-center items-center">
+          <img src={memojiImage} alt="Person Behind computer" className="size-[100px] lg:size-[150px]" />
+          <div className="flex justify-center items-center bg-zinc-950 px-4 py-1 my-2 rounded-xl text-xs gap-2 lg:text-sm">
+            <div className="bg-green-600 size-1.5 rounded-full lg:size-2"></div>
+            <div className="text-zinc-100/60">Available for collaboration</div>
+          </div>
+        </div>
+        <h1 className="font-mono text-3xl flex justify-center items-center my-5 max-w-[370px] text-center font-bold selection:bg-white selection:text-black lg:text-4xl lg:max-w-[400px] max-sm:text-2xl">
+          Building Functional Websites
         </h1>
-        <p className="my-5 max-[650px]:text-sm max-[430px]:text-xs">
-          I'm a Computer Science student <br />
-          at IIIT Surat. <br />I know MERN stack closely. <br /> Reach out if
-          you'd like to learn more
+        <p className="max-w-[370px] text-center font-extralight text-zinc-400/50 my-4 selection:bg-black selection:text-white lg:text-lg lg:max-w-[450px]">
+          I Specialize in transforming designs into functional, high-performance web apps. Let's Discuss your next project.
         </p>
-        <button className="btn px-4 py-1 rounded-2xl cursor-pointer bg-zinc-600 my-2 hover:ring-2 hover:ring-zinc-600 max-[650px]:text-sm">
-          <a href="#footer">Contact Me</a>
-        </button>
+        <div className="flex gap-3 justify-center items-center my-5 sm:flex-col sm:gap-y-4 md:flex-row lg:text-lg font-extralight max-sm:flex-col">
+          <button className="flex justify-center border border-zinc-700 py-3 px-5 rounded-xl">
+            <span className="pr-2">
+              <a href="#projects">Explore My Work</a>
+            </span>
+            <img src={ArrowDown} width={15} height={15} className="bg-amber-50/40 rounded-full" />
+            {/* <ArrowDown width={20} height={25} /> */}
+          </button>
+          <button className="flex justify-center bg-zinc-950 py-3 px-6 rounded-xl">
+            <span>👋</span>
+            <span className="ml-2">
+              <a href="#footer">Let's Connect</a>
+            </span>
+          </button>
+        </div>
       </div>
-      <figure className="max-[1080px]:my-10 w-[393px] h-[401px] max-[550px]:h-[60%] max-[550px]:w-[60%]">
-        <img
-          src={heroIcon}
-          alt="hero img"
-          className="rounded-[50%]  "
-        />
-      </figure>
     </div>
   );
 };
 
-export default Hero;
+export default HeroSection;

@@ -1,121 +1,53 @@
-import projectIcon from "../assets/projects/project.png";
+import darkSaasLandingPage from "../assets/images/dark-saas-landing-page.png";
+import lightSaasLandingPage from "../assets/images/light-saas-landing-page.png";
+import aiStartupLandingPage from "../assets/images/ai-startup-landing-page.png";
 
-const Projects = () => {
+const portfolioProjects = [
+  {
+    id: 1,
+    year: "2025",
+    title: "My Portfolio Page",
+    link: "",
+    image: darkSaasLandingPage,
+  },
+  {
+    id: 2,
+    year: "2025",
+    title: "2 Factor Authentication",
+    link: "",
+    image: lightSaasLandingPage,
+  },
+  {
+    id: 3,
+    year: "2025",
+    title: "Landing Page",
+    link: "",
+    image: aiStartupLandingPage,
+  },
+];
+
+const ProjectsSection = () => {
   return (
-    <div
-      className="flex flex-col justify-center items-center mt-16 mb-40 pt-20"
-      id="projects"
-    >
-      <h1 className="text-2xl">PROJECTS</h1>
-      <div className="project-cards grid grid-cols-3 max-[1180px]:grid-cols-2 max-[750px]:grid-cols-1 justify-center items-center gap-4 mt-10">
-        <div className="project-card flex flex-col justify-center items-center max-w-[350px] px-2 py-6 bg-zinc-900 rounded-2xl max-[1000px]:max-w-[250px] max-[1000px]:text-sm max-[1000px]:py-4">
-          <figure>
-            <img
-              src={projectIcon}
-              alt="project"
-              width={298}
-              height={200}
-            />
-          </figure>
-          <div className="description flex flex-col justify-center my-4 mx-2 gap-4">
-            <h1 className="text-xl max-[1000px]:text-md">Portfolio</h1>
-            <p className="text-sm max-[1000px]:text-xs">
-              This is my first big project in React.js to solidify my React.js
-              knowledge
-            </p>
-            <div className="tools flex justify-around items-center flex-wrap gap-y-3">
-              <span className="tool py-2 px-4 bg-zinc-950 rounded-2xl max-[1000px]:text-xs max-[1000px]:px-3">
-                React
-              </span>
-              <span className="tool py-2 px-4 bg-zinc-950 rounded-2xl max-[1000px]:text-xs max-[1000px]:px-3">
-                Node
-              </span>
-            </div>
-          </div>
-          <div className="buttons flex justify-center items-center gap-x-5">
-            <button className="demo px-5 py-2 ring-1 rounded-xl hover:ring-2 hover:ring-zinc-600 cursor-not-allowed max-[1000px]:text-sm max-[1000px]:px-3">
-              Demo
-            </button>
-            <button className="source px-5 py-2 ring-1 rounded-xl hover:ring-2 hover:ring-zinc-600 cursor-not-allowed max-[1000px]:text-sm max-[1000px]:px-3">
-              Source
-            </button>
-          </div>
-        </div>
-        <div className="project-card flex flex-col justify-center items-center max-w-[350px] px-2 py-6 bg-zinc-900 rounded-2xl max-[1000px]:max-w-[250px] max-[1000px]:text-sm max-[1000px]:py-4">
-          <figure>
-            <img
-              src={projectIcon}
-              alt="project"
-              width={298}
-              height={200}
-            />
-          </figure>
-          <div className="description flex flex-col justify-center my-4 mx-2 gap-4">
-            <h1 className="text-xl max-[1000px]:text-md">
-              Authentication System
-            </h1>
-            <p className="text-sm max-[1000px]:text-xs">
-              I have built this project to solidify my Express.js knowledge
-            </p>
-            <div className="tools flex justify-around items-center flex-wrap gap-y-3">
-              <span className="tool py-2 px-4 bg-zinc-950 rounded-2xl max-[1000px]:text-xs max-[1000px]:px-3">
-                Express
-              </span>
-              <span className="tool py-2 px-4 bg-zinc-950 rounded-2xl max-[1000px]:text-xs max-[1000px]:px-3">
-                Node
-              </span>
-            </div>
-          </div>
-          <div className="buttons flex justify-center items-center gap-x-5">
-            <button className="demo px-5 py-2 ring-1 rounded-xl hover:ring-2 hover:ring-zinc-600 cursor-not-allowed max-[1000px]:text-sm max-[1000px]:px-3 ">
-              Demo
-            </button>
-            <button className="source px-5 py-2 ring-1 rounded-xl hover:ring-2 hover:ring-zinc-600 cursor-not-allowed max-[1000px]:text-sm max-[1000px]:px-3">
-              Source
-            </button>
-          </div>
-        </div>
-        <div className="project-card flex flex-col justify-center items-center max-w-[350px] px-2 py-6 bg-zinc-900 rounded-2xl max-[1000px]:max-w-[250px] max-[1000px]:text-sm max-[1000px]:py-4">
-          <figure>
-            <img
-              src={projectIcon}
-              alt="project"
-              width={298}
-              height={200}
-            />
-          </figure>
-          <div className="description flex flex-col justify-center my-4 mx-2 gap-4">
-            <h1 className="text-xl max-[1000px]:text-md">Movie App</h1>
-            <p className="text-sm max-[1000px]:text-xs">
-              This MERN stack project is currently under Development ...
-            </p>
-            <div className="tools flex justify-around items-center flex-wrap gap-y-3">
-              <span className="tool py-2 px-4 bg-zinc-950 rounded-2xl max-[1000px]:text-xs max-[1000px]:px-3">
-                React
-              </span>
-              <span className="tool py-2 px-4 bg-zinc-950 rounded-2xl max-[1000px]:text-xs max-[1000px]:px-3">
-                Express
-              </span>
-              <span className="tool py-2 px-4 bg-zinc-950 rounded-2xl max-[1000px]:text-xs max-[1000px]:px-3">
-                Node
-              </span>
-              <span className="tool py-2 px-4 bg-zinc-950 rounded-2xl max-[1000px]:text-xs max-[1000px]:px-3">
-                MongoDB
-              </span>
-            </div>
-          </div>
-          <div className="buttons flex justify-center items-center gap-x-5">
-            <button className="demo px-5 py-2 ring-1 rounded-xl hover:ring-2 hover:ring-zinc-600 cursor-not-allowed max-[1000px]:text-sm max-[1000px]:px-3 ">
-              Demo
-            </button>
-            <button className="source px-5 py-2 ring-1 rounded-xl hover:ring-2 hover:ring-zinc-600  max-[1000px]:text-sm max-[1000px]:px-3 cursor-not-allowed">
-              Source
-            </button>
-          </div>
+    <div className="py-20 lg:py-24 flex justify-center items-center" id="projects">
+      <div className="container flex flex-col justify-center items-center">
+        <p className="text-2xl text-zinc-400 font-bold lg:my-4">REAL WORLD RESULTS</p>
+        <h2 className="text-xl font-extralight text-zinc-300/50 mt-5  lg:my-5">Featured Projects</h2>
+        <div className="flex sm:flex-col md:flex-row justify-center items-center flex-wrap  lg:my-5">
+          {portfolioProjects.map((project) => {
+            return (
+              <div key={project.id} className="flex flex-col border border-zinc-600 my-4 px-4 py-6 rounded-xl gap-y-4 bg-zinc-700/20 max-w-[300px] mx-4">
+                <div className="flex flex-col">
+                  <span className="text-zinc-500 ">{project.year}</span>
+                  <h3 className="text-xl text-zinc-300">{project.title}</h3>
+                </div>
+                <img src={project.image} alt="project img" className="w-[100%]" />
+              </div>
+            );
+          })}
         </div>
       </div>
     </div>
   );
 };
 
-export default Projects;
+export default ProjectsSection;
