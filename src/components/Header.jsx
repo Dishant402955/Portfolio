@@ -1,7 +1,7 @@
 const Header = () => {
   return (
     <div className="flex justify-center items-center fixed top-4 left-0 w-[100%] ">
-      <nav className="flex gap-1 p-2 border border-zinc-400/20 rounded-xl bg-zinc-600/50 backdrop-blur max-[450px]:gap-0 max-[600px]:p-0.5 max-[600px]:text-sm max-[1000px]:p-1 max-[1000px]:text-sm">
+      <nav className="flex gap-1 p-2 border border-zinc-400/20 rounded-xl bg-zinc-600/50 backdrop-blur max-[450px]:gap-0 max-[600px]:p-0.5 max-[600px]:text-lg max-[1000px]:p-1 max-[1000px]:text-md">
         <a href="#" className="nav-item">
           Home
         </a>

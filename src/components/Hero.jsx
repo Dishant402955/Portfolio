@@ -3,7 +3,7 @@ import ArrowDown from "../assets/icons/arrow-down.svg";
 
 const HeroSection = () => {
   return (
-    <div className="py-24 md:py-36 lg:py-48 flex justify-center items-center" id="hero">
+    <div className="py-24 md:py-36 lg:py-32 flex justify-center items-center" id="hero">
       <div className="container flex flex-col justify-center items-center">
         <div className="flex flex-col justify-center items-center">
           <img src={memojiImage} alt="Person Behind computer" className="size-[100px] lg:size-[150px]" />
