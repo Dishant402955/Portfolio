@@ -1,5 +1,5 @@
 import memojiImage from "../assets/images/memoji-computer.png";
-import ArrowDown from "../assets/icons/arrow-down.svg";
+import { FaArrowDownLong } from "react-icons/fa6";
 
 const HeroSection = () => {
   return (
@@ -19,11 +19,12 @@ const HeroSection = () => {
           I Specialize in transforming designs into functional, high-performance web apps. Let's Discuss your next project.
         </p>
         <div className="flex gap-3 justify-center items-center my-5 sm:flex-col sm:gap-y-4 md:flex-row lg:text-lg font-extralight max-sm:flex-col select-none">
-          <button className="flex justify-center border border-zinc-700 py-3 px-5 rounded-xl">
+          <button className="flex justify-center items-center border border-zinc-700 py-3 px-5 rounded-xl">
             <span className="pr-2">
               <a href="#projects">Explore My Work</a>
             </span>
-            <img src={ArrowDown} width={15} height={15} className="bg-amber-50/40 rounded-full" />
+            <FaArrowDownLong />
+            {/* <img src={ArrowDown} width={15} height={15} className="bg-amber-50/40 rounded-full" /> */}
           </button>
           <button className="flex justify-center bg-zinc-950 py-3 px-6 rounded-xl">
             <span>👋</span>

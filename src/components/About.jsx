@@ -1,19 +1,29 @@
 import Book from "../assets/images/book-cover.png";
-import StarIcon from "../assets/icons/star.svg";
-import Html5 from "../assets/icons/html5.svg";
-import Css3 from "../assets/icons/css3.svg";
-import Reactjs from "../assets/icons/react.svg";
-import Chrome from "../assets/icons/chrome.svg";
-import GitHub from "../assets/icons/github.svg";
-import JavaScript from "../assets/icons/square-js.svg";
+import { MdStars } from "react-icons/md";
+import { IoLogoJavascript } from "react-icons/io5";
+import { BiLogoTypescript } from "react-icons/bi";
+import { FaGitAlt, FaGithub, FaHtml5, FaReact, FaPython } from "react-icons/fa";
+import { IoLogoCss3 } from "react-icons/io";
+import { RiTailwindCssFill, RiNextjsFill } from "react-icons/ri";
+import { IoLogoNodejs } from "react-icons/io5";
+import { SiExpress, SiMongoose, SiMongodb, SiOllama } from "react-icons/si";
 
 const tools = [
-  { id: 1, title: "HTML5", link: Html5 },
-  { id: 2, title: "CSS3", link: Css3 },
-  { id: 3, title: "React", link: Reactjs },
-  { id: 4, title: "Chrome", link: Chrome },
-  { id: 5, title: "GitHub", link: GitHub },
-  { id: 6, title: "JavaScript", link: JavaScript },
+  { id: 1, title: "JavaScript", Icon: IoLogoJavascript },
+  { id: 2, title: "Typescript", Icon: BiLogoTypescript },
+  { id: 3, title: "Git", Icon: FaGitAlt },
+  { id: 4, title: "Github", Icon: FaGithub },
+  { id: 5, title: "HTML5", Icon: FaHtml5 },
+  { id: 6, title: "CSS3", Icon: IoLogoCss3 },
+  { id: 7, title: "Tailwind", Icon: RiTailwindCssFill },
+  { id: 8, title: "React", Icon: FaReact },
+  { id: 9, title: "Nodejs", Icon: IoLogoNodejs },
+  { id: 10, title: "Expressjs", Icon: SiExpress },
+  { id: 11, title: "Nextjs", Icon: RiNextjsFill },
+  { id: 12, title: "Mongoose", Icon: SiMongoose },
+  { id: 13, title: "MongoDB", Icon: SiMongodb },
+  { id: 14, title: "Python", Icon: FaPython },
+  { id: 15, title: "Ollama", Icon: SiOllama },
 ];
 
 const AboutSection = () => {
@@ -28,17 +38,18 @@ const AboutSection = () => {
           <div id="toolbox" className="border border-zinc-500 m-2 px-3 py-4 rounded-xl bg-zinc-400/15 flex flex-col w-[95%] max-w-[330px] flex-wrap row-span-2">
             <div>
               <div className="flex gap-1 items-center mb-2 mt-3">
-                <img src={StarIcon} className="bg-amber-50/40 rounded-full mr-2 select-none" />
+                <MdStars />
+                {/* <img src={StarIcon} className="bg-amber-50/40 rounded-full mr-2 select-none" /> */}
                 <h3 className="text-xl text-zinc-200/90 select-none">My Toolbox</h3>
               </div>
               <p className="text-zinc-400 my-3 mx-2">Explore the technologies and tools i use to craft my applications</p>
             </div>
-            <div id="tools" className="flex flex-wrap gap-4 justify-center items-center my-4 mt-20 max-[900px]:mt-2">
-              {tools.map((tool) => {
+            <div id="tools" className="flex flex-wrap gap-4 justify-center items-center my-4 max-[900px]:mt-2">
+              {tools.map(({ id, title, Icon }) => {
                 return (
-                  <div className="flex items-center gap-x-4 border w-fit px-4 py-3 border-zinc-500 rounded-lg text-md text-zinc-300 select-none" key={tool.id}>
-                    <img src={tool.link} width={25} />
-                    <h4>{tool.title}</h4>
+                  <div className="flex items-center border w-fit px-2 py-3 border-zinc-500 rounded-lg text-sm text-zinc-300 select-none gap-x-2" key={id}>
+                    <Icon />
+                    <h4>{title}</h4>
                   </div>
                 );
               })}
@@ -46,7 +57,8 @@ const AboutSection = () => {
           </div>
           <div id="reads" className="border border-zinc-500 m-2 px-3 py-4 rounded-xl bg-zinc-400/15 flex flex-col w-[95%] max-w-[330px] flex-wrap">
             <div className="flex gap-1 items-center mb-2 select-none">
-              <img src={StarIcon} className="bg-amber-50/40 rounded-full mr-2" />
+              <MdStars />
+              {/* <img src={StarIcon} className="bg-amber-50/40 rounded-full mr-2" /> */}
               <h3 className="text-xl text-zinc-200/90">My Reads</h3>
             </div>
             <p className="text-zinc-400 my-3 mx-2">Explore the books that shapes my Life</p>
@@ -56,7 +68,8 @@ const AboutSection = () => {
           </div>
           <div id="hobbies" className="border border-zinc-500 m-2 px-3 py-4 rounded-xl bg-zinc-400/15 flex flex-col w-[95%] max-w-[330px]">
             <div className="flex gap-1 items-center mb-2 select-none">
-              <img src={StarIcon} className="bg-amber-50/40 rounded-full mr-2" />
+              <MdStars />
+              {/* <img src={StarIcon} className="bg-amber-50/40 rounded-full mr-2" /> */}
               <h3 className="text-xl text-zinc-200/90">Beyond the Code</h3>
             </div>
             <p className="text-zinc-400 my-3 mx-2">Explore my interests and hobbies beyond the digital realm</p>

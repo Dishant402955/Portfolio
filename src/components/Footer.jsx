@@ -1,4 +1,4 @@
-import Arrow from "../assets/icons/arrow-up-right.svg";
+import { MdArrowOutward } from "react-icons/md";
 
 const Footer = () => {
   return (
@@ -14,13 +14,14 @@ const Footer = () => {
           <div id="linkedin">
             <a href="https://linkedin.com/in/dishant-radadiya" className="flex items-center gap-3 my-2" target="_blank">
               <span>Linkedin</span>
-              <img src={Arrow} alt="arrow" width={18} className="bg-amber-50/40 rounded-full mr-2" />
+              <MdArrowOutward />
+              {/* <img src={Arrow} alt="arrow" width={18} className="bg-amber-50/40 rounded-full mr-2" /> */}
             </a>
           </div>
           <div id="github">
             <a href="https://github.com/Dishant402955" className="flex items-center gap-3 my-2" target="_blank">
               <span>GitHub</span>
-              <img src={Arrow} alt="arrow" width={18} className="bg-amber-50/40 rounded-full mr-2" />
+              <MdArrowOutward />
             </a>
           </div>
         </div>
