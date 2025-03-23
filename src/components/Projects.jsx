@@ -1,5 +1,5 @@
-import darkSaasLandingPage from "../assets/images/dark-saas-landing-page.png";
-import lightSaasLandingPage from "../assets/images/light-saas-landing-page.png";
+import Portfolio from "../assets/images/Screenshot 2025-03-23 102247.png";
+import OAuth from "../assets/images/image.png";
 import aiStartupLandingPage from "../assets/images/ai-startup-landing-page.png";
 
 const portfolioProjects = [
@@ -7,15 +7,15 @@ const portfolioProjects = [
     id: 1,
     year: "2025",
     title: "My Portfolio Page",
-    link: "",
-    image: darkSaasLandingPage,
+    link: "https://dishant.is-a.dev",
+    image: Portfolio,
   },
   {
     id: 2,
     year: "2025",
-    title: "2 Factor Authentication",
-    link: "",
-    image: lightSaasLandingPage,
+    title: "OAuth Template",
+    link: "https://oauth-template.vercel.app/",
+    image: OAuth,
   },
   {
     id: 3,
