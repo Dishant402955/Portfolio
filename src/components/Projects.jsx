@@ -9,6 +9,7 @@ const portfolioProjects = [
     title: "My Portfolio Page",
     link: "https://dishant.is-a.dev",
     image: Portfolio,
+    source: "https://github.com/Dishant402955/portfolio",
   },
   {
     id: 2,
@@ -16,13 +17,15 @@ const portfolioProjects = [
     title: "OAuth Template",
     link: "https://oauth-template.vercel.app/",
     image: OAuth,
+    source: "https://github.com/Dishant402955/authjs-template",
   },
   {
     id: 3,
     year: "2025",
-    title: "Landing Page",
+    title: "Personal Dashboard",
     link: "",
     image: aiStartupLandingPage,
+    source: "https://github.com/Dishant402955/portfolio",
   },
 ];
 
@@ -42,6 +45,9 @@ const ProjectsSection = () => {
                 </div>
                 <a href={project.link} target="_blank">
                   <img src={project.image} alt="project img" className=" select-none" />
+                </a>
+                <a href={project.source} className="w-full flex justify-center items-center" target="_blank">
+                  <button className="py-2 px-4 cursor-pointer border-2 border-zinc-600/65 rounded-xl">Source Code</button>
                 </a>
               </div>
             );
