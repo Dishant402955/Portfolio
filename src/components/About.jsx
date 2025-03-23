@@ -6,7 +6,8 @@ import { FaGitAlt, FaGithub, FaHtml5, FaReact, FaPython } from "react-icons/fa";
 import { IoLogoCss3 } from "react-icons/io";
 import { RiTailwindCssFill, RiNextjsFill } from "react-icons/ri";
 import { IoLogoNodejs } from "react-icons/io5";
-import { SiExpress, SiMongoose, SiMongodb, SiOllama } from "react-icons/si";
+import { SiExpress, SiMongoose, SiMongodb, SiOllama, SiDrizzle } from "react-icons/si";
+import { BiLogoPostgresql } from "react-icons/bi";
 
 const tools = [
   { id: 1, title: "JavaScript", Icon: IoLogoJavascript },
@@ -24,6 +25,9 @@ const tools = [
   { id: 13, title: "MongoDB", Icon: SiMongodb },
   { id: 14, title: "Python", Icon: FaPython },
   { id: 15, title: "Ollama", Icon: SiOllama },
+  { id: 16, title: "Drizzle", Icon: SiDrizzle },
+
+  { id: 17, title: "PostgreSQL", Icon: BiLogoPostgresql },
 ];
 
 const AboutSection = () => {
