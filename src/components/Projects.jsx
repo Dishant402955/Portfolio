@@ -1,6 +1,6 @@
 import Portfolio from "../assets/images/Screenshot 2025-03-23 102247.png";
 import OAuth from "../assets/images/image.png";
-import aiStartupLandingPage from "../assets/images/ai-startup-landing-page.png";
+import aiStartupLandingPage from "../assets/images/Screenshot 2025-03-23 102247.png";
 
 const portfolioProjects = [
   {
@@ -40,7 +40,9 @@ const ProjectsSection = () => {
                   <span className="text-zinc-500 select-none">{project.year}</span>
                   <h3 className="text-xl text-zinc-300">{project.title}</h3>
                 </div>
-                <img src={project.image} alt="project img" className="w-[100%] select-none" />
+                <a href={project.link} target="_blank">
+                  <img src={project.image} alt="project img" className=" select-none" />
+                </a>
               </div>
             );
           })}

@@ -42,9 +42,9 @@ const AboutSection = () => {
                 {/* <img src={StarIcon} className="bg-amber-50/40 rounded-full mr-2 select-none" /> */}
                 <h3 className="text-xl text-zinc-200/90 select-none">My Toolbox</h3>
               </div>
-              <p className="text-zinc-400 my-3 mx-2">Explore the technologies and tools i use to craft my applications</p>
+              <p className="text-zinc-400 my-5 mx-2">Explore the technologies and tools i use to craft my applications</p>
             </div>
-            <div id="tools" className="flex flex-wrap gap-4 justify-center items-center my-4 max-[900px]:mt-2">
+            <div id="tools" className="flex flex-wrap gap-4 justify-center items-center my-6 max-[900px]:mt-2">
               {tools.map(({ id, title, Icon }) => {
                 return (
                   <div className="flex items-center border w-fit px-2 py-3 border-zinc-500 rounded-lg text-sm text-zinc-300 select-none gap-x-2" key={id}>
