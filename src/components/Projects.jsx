@@ -14,15 +14,15 @@ const portfolioProjects = [
   {
     id: 2,
     year: "2025",
-    title: "OAuth Template",
-    link: "https://oauth-template.vercel.app/",
+    title: "Authjs Template",
+    link: "https://auth-template-blush.vercel.app/",
     image: OAuth,
     source: "https://github.com/Dishant402955/authjs-template",
   },
   {
     id: 3,
     year: "2025",
-    title: "Personal Dashboard",
+    title: "StoreIt",
     link: "",
     image: aiStartupLandingPage,
     source: "https://github.com/Dishant402955/portfolio",
